@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Curso JS</title>
+        <style>
+            body {
+                background-color: gray;/*comentários css*/
+                color:white;
+                font: normal 30pt arial;
+            }
+            h1 {
+                color:yellow;
+                font: normal 25pt arial;
+            }
+            p {
+                color:turquoise
+                font: normal 15pt arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Coding now</h1><!--Comentários html-->
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia eaque laboriosam sit blanditiis nam ad asperiores cupiditate. Sunt facilis illo quia amet, odio quos eveniet tempora deserunt corporis aliquid dolores.</p>
+        <script>
+            var nome = window.prompt('Whats your name: ')
+            window.confirm(`Do your name have ${nome.length} letters?`)
+            window.alert(`Your name have ${nome.length} letters`)
+            document.write(`Your name have ${nome.length} letters!!!<br>`)
+            document.write(`Your name in uppercase is <strong>${nome.toUpperCase()}</strong>!!!<br>`)
+            document.write(`Your name in lowercase is <strong>${nome.toLowerCase()}</strong>!!!<br>`)
+        </script>
+    </body>
+</html>

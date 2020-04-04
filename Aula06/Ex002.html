@@ -31,9 +31,10 @@
         <script>
             //window.alert('Initial Message')
             //window.confirm('Initial Confirmation')
-            var number1 = window.prompt('Digit the first number: ')
-            var number2 = window.prompt('Digit the second number: ')
-            window.alert('You digit the numbers: ' + number1 + ' e ' + number2 + '!!!')
+            var number1 = Number(window.prompt('Digit the first number: '))
+            var number2 = Number(window.prompt('Digit the second number: '))
+            var sum = number1 + number2 //+ serve para concatenação e adição
+            window.alert(`The sum between ${number1} and ${number2} is ${sum}`)
         </script>
 
     </body>
