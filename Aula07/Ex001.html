@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Curso JS</title>
+        <style>
+            body {
+                background-color: blueviolet;
+                font: normal 30pt arial;
+                color: white;
+            }
+            h1 {
+                font: oblique 40pt arial;/*comentário em CSS*/
+                color: whitesmoke;
+            }
+            p {
+                font: normal 25pt arial;
+                color: thistle;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Aula 07</h1><!--Cometário em html-->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, rerum beatae odio, fugit sequi tenetur laboriosam at soluta ut accusantium, laudantium quas sed omnis eos? Voluptate doloribus ad omnis cupiditate.</p>  
+        <script>
+            //window.alert('teste')
+            //window.confirm('teste')
+            var salary = Number(window.prompt('Whats your salary?'))
+            document.write(`My salary is is ${salary.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`)
+        </script>                  
+    </body>
+</html>
