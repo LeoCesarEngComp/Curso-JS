@@ -14,12 +14,21 @@
     
     <section>
         <div id="msg">
-            <p>Ano de Nascimento: </p>
-            <input type="number" name="txtano" id="txtano" min="1900" max="2020">
+            <p>
+                Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="1900" max="2020">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="radsex" id="masc" checked> <label for="Masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem"> <label for="Fem">Feminino</label>
+            </p><!--Type radio usa o mesmo name, senão não faz seleção da bolina no formulário-->
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div id="foto">
             
         <div id="res">
-            <img id="imagem" src="manha.png" alt="Foto do dia">
+            Preencha dos dados acima para ver o resultado!
+            
         </div>
     </section>
     
@@ -27,6 +36,6 @@
         <p>&copy;SiteDoLeo</p>
     </footer>
     
-    <script src="script"></script>
+    <script src="script.js"></script>
 </body>
 </html>
