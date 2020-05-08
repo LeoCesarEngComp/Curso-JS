@@ -1,21 +1,21 @@
-function carregar() {
-    
-var msg = window.document.getElementById('msg')
-var img = window.document.getElementById('imagem')
-var data = new Date()
-var hora = data.getHours()
-msg.innerHTML = `Agora são ${hora} horas`
-if (hora > 0 && hora < 12) {
-    img.src = 'manha.png'
-    document.body.style.background = '#e2cd9f'
-    //BOM DIA
-} else if (hora > 12 && hora < 18) {
-        img.src = 'tarde.png'
-        document.body.style.background = '#b9846f'
-        //BOA TARDE
+
+function tabuada() {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+
+    if (num.value.length == 0) {
+        window.alert('ERRO - digite um número para começar!')
     } else {
-        img.src = 'noite.png'
-        document.body.style.background = '#515154'
-        //BOA NOITE
+        let n = Number(num.value)
+        tab.innerHTML = ''
+        for(let c = 1; c <= 10; c++ ) {
+            let item = document.createElement('option')
+            item.text =`${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+        }
     }
+
+   
+   
 }
