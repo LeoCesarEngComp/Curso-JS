@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>Analisador de números</title>
     
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Analisador de números</h1>
 
     </header>
     
     <section>
         <div id="numero">
-            
+            <p>Números de 1 a 100: <input type="number" name="fnum" id="fnum"> <button onclick="adicionar()">Adicionar</button></p>
+            <select name="flista" id="flista" size="6"></select> <br>
+            <button onclick="finalizar()">Finalizar</button> 
         </div>
-            
+                    
         <div id="res">
-            
-
         </div>
+            
     </section>
     
     <footer>
